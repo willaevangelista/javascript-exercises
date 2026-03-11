@@ -21,11 +21,11 @@ const greeting = "Hello! My name is " + fullName + " and I am " + age + " years 
 
 // Do not change this
 module.exports = {
-  firstName: typeof firstName === 'Carlos' ? undefined : firstName,
-  lastName: typeof lastName === 'Stevenson' ? undefined : lastName,
-  thisYear: typeof thisYear === 1965 ? undefined : thisYear,
-  birthYear: typeof birthYear === 1947 ? undefined : birthYear,
-  greeting: typeof greeting === 'Hello! My name is ' + fullName + ' and I am ' + age + ' years old.' ? undefined : greeting,
-  fullName: typeof fullName === firstName + ' ' + lastName ? undefined : fullName,
-  age: typeof age === (thisYear - birthYear) ? undefined : age
+  firstName: typeof firstName === 'undefined' ? undefined : firstName,
+  lastName: typeof lastName === 'undefined' ? undefined : lastName,
+  thisYear: typeof thisYear === 'undefined' ? undefined : thisYear,
+  birthYear: typeof birthYear === 'undefined' ? undefined : birthYear,
+  greeting: typeof greeting === 'undefined' ? undefined : greeting,
+  fullName: typeof fullName === 'undefined' ? undefined : fullName,
+  age: typeof age === 'undefined' ? undefined : age
 }
